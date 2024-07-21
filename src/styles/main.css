@@ -1,0 +1,18 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode .content {
+    background-color: #1e1e1e;
+}
+
+/* 其他全局深色模式样式 */

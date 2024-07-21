@@ -1,0 +1,32 @@
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+    width: 12px; /* 滚动条宽度 */
+    height: 12px; /* 滚动条高度（用于水平滚动条） */
+    z-index: 100;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* 滚动条轨道背景 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* 滚动条滑块背景 */
+    border-radius: 10px; /* 滚动条滑块圆角 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* 鼠标悬停时的滑块背景 */
+}
+
+/* 确保滚动条在最上层 */
+body {
+    position: relative;
+    z-index: 9999; /* 确保滚动条位于最上层 */
+    overflow: auto;
+}
+
+/* 确保其他内容的z-index低于滚动条 */
+#app {
+    position: relative;
+    z-index: 1;
+}
